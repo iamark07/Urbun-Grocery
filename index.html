@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo-2.png" type="image/png" />
+
+    <title>Urban Grocery</title>
+</head>
+
+<body class="bg-slate-50 font-[Inter]">
+
+    <!-- Header Start -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Brand -->
+                <div>
+                    <img src="assets/images/logo-2.png" alt="Urban Grocery" class="w-44 animate-pulse">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8 text-gray-800 text-sm font-medium">
+                    <a href="#" class="hover:text-yellow-500 transition duration-300">Home</a>
+                    <a href="#" class="hover:text-yellow-500 transition duration-300">Categories</a>
+                    <a href="#" class="hover:text-yellow-500 transition duration-300">Offers</a>
+                    <a href="#" class="hover:text-yellow-500 transition duration-300">Contact</a>
+                </nav>
+
+                <!-- Icons and CTA -->
+                <div class="hidden md:flex">
+                    <button
+                        class="bg-gradient-to-br from-[#00f276] to-[#0054ff] text-white px-4 py-2 rounded-full text-sm font-mediu">
+                        Download Brochure
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" class="text-3xl text-gray-800 focus:outline-none">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-5 bg-amber-400 text-white font-medium space-y-4">
+            <a href="#" class="block hover:text-black">Home</a>
+            <a href="#" class="block hover:text-black">Categories</a>
+            <a href="#" class="block hover:text-black">Offers</a>
+            <a href="#" class="block hover:text-black">Contact</a>
+            <div class="flex space-x-5 pt-3 text-xl">
+                <i class="ri-search-line hover:text-black cursor-pointer"></i>
+                <i class="ri-shopping-cart-line hover:text-black cursor-pointer"></i>
+                <i class="ri-user-line hover:text-black cursor-pointer"></i>
+            </div>
+            <button class="w-full bg-gradient-to-br from-[#00f276] to-[#0054ff] text-white py-2 rounded-full hover:from-[#0054ff] hover:to-[#00f276] transition">Sign Up</button>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section class="bg-gradient-to-br from-[#00f276] to-[#0054ff] py-20 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div class="space-y-6 text-white">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-snug">
+                    Get Your <span class="underline decoration-white/60">Fresh Groceries</span><br>
+                    Delivered in Minutes
+                </h1>
+                <p class="text-white/90 text-base md:text-lg">
+                    Wide range of daily essentials delivered quickly and affordably right to your door.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#"
+                        class="bg-white text-[#0054ff] px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition">
+                        🛒 Start Shopping
+                    </a>
+                    <a href="#"
+                        class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#00f276] transition">
+                        📦 Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="relative">
+                <div class="relative w-full max-w-md mx-auto">
+                    <div class="absolute -inset-4 bg-white/20 rounded-full blur-2xl opacity-40"></div>
+                    <img src="assets/images/logo.png" alt="Grocery Bag"
+                        class="relative z-10 w-full drop-shadow-2xl rounded-2xl" />
+                </div>
+                <div
+                    class="absolute -bottom-6 -left-6 bg-white px-4 py-2 shadow-lg rounded-full text-sm font-medium text-[#0054ff] flex items-center gap-2">
+                    <i class="ri-time-line text-[#00f276] text-lg"></i> Delivery in 30 mins
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuBtn.innerHTML = mobileMenu.classList.contains('hidden')
+                ? '<i class="ri-menu-line"></i>'
+                : '<i class="ri-close-line"></i>';
+        });
+    </script>
+</body>
+
+</html>
