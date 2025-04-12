@@ -18,115 +18,131 @@
     <link rel="icon" href="assets/images/logo-2.png" type="image/png" />
 
     <title>Urban Grocery</title>
+
 </head>
 
-<body class="bg-slate-50 font-[Inter]">
+<body class="bg-slate-50">
 
     <!-- Header Start -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex justify-between items-center">
-                <!-- Logo and Brand -->
+                <!-- Logo -->
                 <div>
-                    <img src="assets/images/logo-2.png" alt="Urban Grocery" class="w-44 animate-pulse">
+                    <img src="assets/images/logo-2.png" alt="Urban Grocery" class="w-44">
                 </div>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center gap-8 text-gray-800 text-sm font-medium">
-                    <a href="#" class="hover:text-yellow-500 transition duration-300">Home</a>
-                    <a href="#" class="hover:text-yellow-500 transition duration-300">Categories</a>
-                    <a href="#" class="hover:text-yellow-500 transition duration-300">Offers</a>
-                    <a href="#" class="hover:text-yellow-500 transition duration-300">Contact</a>
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center gap-8 text-[14px]">
+                    <a href="#"
+                        class="bg-gradient-to-r from-[#00f276] font-semibold to-[#0054ff] bg-clip-text text-transparent transition duration-300 flex items-center gap-1"><i
+                            class="ri-home-4-line"></i> Home</a>
+                    <a href="#" class="text-gray-800 bg-gradient-to-r hover:from-[#00f276] font-semibold hover:to-[#0054ff] bg-clip-text hover:text-transparent transition duration-300 flex items-center gap-1"><i
+                            class="ri-apps-line"></i> Categories</a>
+                    <a href="#" class="text-gray-800 bg-gradient-to-r hover:from-[#00f276] font-semibold hover:to-[#0054ff] bg-clip-text hover:text-transparent transition duration-300 flex items-center gap-1"><i
+                            class="ri-price-tag-3-line"></i> Offers</a>
+                    <a href="#" class="text-gray-800 bg-gradient-to-r hover:from-[#00f276] font-semibold hover:to-[#0054ff] bg-clip-text hover:text-transparent transition duration-300 flex items-center gap-1"><i
+                            class="ri-contacts-book-line"></i> Contact</a>
                 </nav>
 
-                <!-- Icons and CTA -->
+                <!-- CTA Button -->
                 <div class="hidden md:flex">
                     <button
-                        class="bg-gradient-to-br from-[#00f276] to-[#0054ff] text-white px-4 py-2 rounded-full text-sm font-mediu">
-                        Download Brochure
+                        class="bg-gradient-to-br from-[#00f276] to-[#0054ff] text-white px-4 py-3 rounded-full text-sm font-medium shadow hover:scale-105 transition">
+                        <i class="ri-download-line mr-1"></i> Download Brochure
                     </button>
                 </div>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile Menu Icon -->
                 <div class="md:hidden flex items-center">
-                    <button id="menuBtn" class="text-3xl text-gray-800 focus:outline-none">
-                        <i class="ri-menu-line"></i>
+                    <button id="menuBtn"
+                        class="text-3xl p-2 bg-white border rounded-sm border-[#3e3e3e53] focus:outline-none">
+                        <i class="ri-menu-line bg-gradient-to-r from-[#00f276] font-semibold to-[#0054ff] bg-clip-text text-transparent"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="md:hidden hidden px-4 pb-5 bg-amber-400 text-white font-medium space-y-4">
-            <a href="#" class="block hover:text-black">Home</a>
-            <a href="#" class="block hover:text-black">Categories</a>
-            <a href="#" class="block hover:text-black">Offers</a>
-            <a href="#" class="block hover:text-black">Contact</a>
-            <div class="flex space-x-5 pt-3 text-xl">
-                <i class="ri-search-line hover:text-black cursor-pointer"></i>
-                <i class="ri-shopping-cart-line hover:text-black cursor-pointer"></i>
-                <i class="ri-user-line hover:text-black cursor-pointer"></i>
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu"
+            class="md:hidden flex absolute -left-full transition-all duration-300 backdrop-blur-md w-full h-[100dvh]">
+            <div class="w-[65%] h-full px-5 py-5 bg-gradient-to-br from-[#2daf6c] to-[#0054ff] text-white font-medium space-y-4">
+                <div class="mt-5 mb-2 flex gap-3 flex-col">
+                    <a href="#" class="block hover:text-black">Home</a>
+                    <a href="#" class="block hover:text-black">Categories</a>
+                    <a href="#" class="block hover:text-black">Offers</a>
+                    <a href="#" class="block hover:text-black">Contact</a>
+                </div>
+                <button
+                    class="text-sm w-full py-3 backdrop-blur-md border border-white/70 text-white hover:scale-105 transition-all duration-300 rounded-full">Download Brochure</button>
             </div>
-            <button class="w-full bg-gradient-to-br from-[#00f276] to-[#0054ff] text-white py-2 rounded-full hover:from-[#0054ff] hover:to-[#00f276] transition">Sign Up</button>
+            <span class="inline-block w-[35%] h-full" onclick="close_menu();"></span>
         </div>
     </header>
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section class="bg-gradient-to-br from-[#00f276] to-[#0054ff] py-20 px-4">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section class="bg-gradient-to-br from-[#00f276] to-[#0054ff] py-16 px-4 md:px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 items-center">
 
             <!-- Left Content -->
-            <div class="space-y-6 text-white">
-                <h1 class="text-4xl md:text-5xl font-extrabold leading-snug">
-                    Get Your <span class="underline decoration-white/60">Fresh Groceries</span><br>
-                    Delivered in Minutes
+            <div class="space-y-6 text-white hero-fade-in-down">
+                <h1 class="text-2xl md:text-5xl font-extrabold">
+                    Get Your <span class="border-b-2 text-yellow-300 border-[#dadada22]">Fresh Groceries</span><br>
+                    Delivered in <span class="text-yellow-300">Minutes</span>
                 </h1>
-                <p class="text-white/90 text-base md:text-lg">
-                    Wide range of daily essentials delivered quickly and affordably right to your door.
+                <p class="text-white/90 text-sm md:text-lg">
+                    Daily essentials delivered fast, fresh, and affordable — right to your door.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
+                <div class="flex flex-wrap gap-2 md:gap-4 pt-4">
                     <a href="#"
-                        class="bg-white text-[#0054ff] px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition">
-                        🛒 Start Shopping
+                        class="text-xs flex items-center gap-2 px-6 py-3 text-white font-semibold rounded-full bg-gradient-to-br from-[#00f276] to-[#0054ff] shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300">
+                        <i class="ri-shopping-cart-2-line text-xs md:text-lg"></i>
+                        Start Shopping
                     </a>
                     <a href="#"
-                        class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#00f276] transition">
-                        📦 Learn More
+                        class="text-xs flex items-center gap-2 px-6 py-3 rounded-full backdrop-blur-md border border-white/40 text-white hover:scale-105 transition-all duration-300">
+                        <i class="ri-information-line text-xs md:text-lg"></i>
+                        Learn More
                     </a>
                 </div>
             </div>
 
             <!-- Right Content -->
-            <div class="relative">
-                <div class="relative w-full max-w-md mx-auto">
-                    <div class="absolute -inset-4 bg-white/20 rounded-full blur-2xl opacity-40"></div>
-                    <img src="assets/images/logo.png" alt="Grocery Bag"
-                        class="relative z-10 w-full drop-shadow-2xl rounded-2xl" />
+            <div class="relative hero-fade-in-up md:ps-10">
+                <div class="relative w-full">
+                    <div class="absolute -inset-4 bg-white/20 rounded-full blur-3xl opacity-50"></div>
+                    <img src="assets/images/hero-section.jpg" alt="Grocery Bag"
+                        class="relative z-10 w-full drop-shadow-xl rounded-3xl" />
                 </div>
-                <div
-                    class="absolute -bottom-6 -left-6 bg-white px-4 py-2 shadow-lg rounded-full text-sm font-medium text-[#0054ff] flex items-center gap-2">
+                <!-- <div
+                    class="absolute -bottom-6 -left-6 bg-white px-5 py-2 shadow-xl rounded-full text-sm font-semibold text-[#0054ff] flex items-center gap-2">
                     <i class="ri-time-line text-[#00f276] text-lg"></i> Delivery in 30 mins
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <!-- Hero Section End -->
 
-
-
-
+    <!-- JS: Mobile Menu Toggle -->
     <script>
-        // Mobile menu toggle
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
 
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            menuBtn.innerHTML = mobileMenu.classList.contains('hidden')
-                ? '<i class="ri-menu-line"></i>'
-                : '<i class="ri-close-line"></i>';
+            mobileMenu.classList.toggle('!left-0');
+            menuBtn.innerHTML = mobileMenu.classList.contains('!left-0')
+                ? '<i class="ri-close-line bg-gradient-to-r from-[#00f276] font-semibold to-[#0054ff] bg-clip-text text-transparent"></i>'
+                : '<i class="ri-menu-line bg-gradient-to-r from-[#00f276] font-semibold to-[#0054ff] bg-clip-text text-transparent"></i>';
         });
+
+        function close_menu(){
+            mobileMenu.classList.remove('!left-0');
+            menuBtn.innerHTML = mobileMenu.classList.contains('!left-0')
+                ? '<i class="ri-close-line bg-gradient-to-r from-[#00f276] font-semibold to-[#0054ff] bg-clip-text text-transparent"></i>'
+                : '<i class="ri-menu-line bg-gradient-to-r from-[#00f276] font-semibold to-[#0054ff] bg-clip-text text-transparent"></i>';
+            
+        }
     </script>
 </body>
 
