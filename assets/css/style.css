@@ -9,11 +9,18 @@
   scroll-behavior: smooth;
 }
 
-.owl-theme .owl-dots .owl-dot span {
+
+/* testimonal caraousel */
+
+.testimonial-carousel.owl-theme .owl-dots .owl-dot span {
   background: #bbffd5 !important;
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
+.testimonial-carousel.owl-theme .owl-dots .owl-dot.active span,
+.testimonial-carousel.owl-theme .owl-dots .owl-dot:hover span {
   background: #1ea51e !important;
+}
+
+.franchise-logos.owl-theme .owl-nav.disabled+.owl-dots{
+ display: none !important;
 }

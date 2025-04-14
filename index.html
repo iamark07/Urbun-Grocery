@@ -123,7 +123,8 @@
             <!-- Left Content -->
             <div class="lg:col-span-5 space-y-6 text-black hero-fade-in-down poppins-regular">
                 <h1 class="text-2xl md:text-5xl font-extrabold">
-                    Get Your <span class="border-b-2 text-[#1ea51e] border-[#dadada22] font-extrabold">Fresh Groceries</span><br>
+                    Get Your <span class="border-b-2 text-[#1ea51e] border-[#dadada22] font-extrabold">Fresh
+                        Groceries</span><br>
                     Delivered in <span class="text-[#1ea51e] font-extrabold">Minutes</span>
                 </h1>
                 <p class="text-black/90 text-sm md:text-lg">
@@ -790,7 +791,7 @@
         </div>
 
         <div data-aos="fade-up">
-            <div class="owl-carousel owl-theme max-w-2xl mx-auto">
+            <div class="owl-carousel testimonial-carousel owl-theme max-w-2xl mx-auto">
                 <!-- Testimonial Card 1 -->
                 <div class="item p-4 cursor-pointer">
                     <div class="bg-white/90 backdrop-blur-md border border-[#b6f3cd] rounded-2xl shadow-lg p-6">
@@ -845,6 +846,7 @@
     </section>
     <!-- testiminal section end -->
 
+    <!-- contact us section start -->
     <section class="bg-gradient-to-br from-[#f3fff2] to-[#e8fdf4] py-20 px-6 md:px-12" id="contact">
         <div class="max-w-6xl mx-auto w-full md:w-[75%] flex flex-col gap-12 items-center">
 
@@ -903,6 +905,44 @@
             </div>
         </div>
     </section>
+    <!-- contact us section end -->
+
+    <!-- Franchise Partners Section -->
+    <section class="py-20 bg-[#fafffa] px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#153e26] mb-20">
+                Our Proud Franchise Partners
+            </h2>
+
+            <div class="owl-carousel franchise-logos owl-theme">
+                <!-- Logo 1 -->
+                <div class="p-6 flex items-center justify-center">
+                    <img src="assets/images/brand-name/1.png" alt="Franchise Logo 1" class="h-8 md:h-12 object-contain">
+                </div>
+                <!-- Logo 2 -->
+                <div class="p-6 flex items-center justify-center">
+                    <img src="assets/images/brand-name/2.png" alt="Franchise Logo 2" class="h-12 md:h-16 object-contain">
+                </div>
+                <!-- Logo 3 -->
+                <div class="p-6 flex items-center justify-center">
+                    <img src="assets/images/brand-name/3.png" alt="Franchise Logo 3" class="h-12 md:h-16 object-contain">
+                </div>
+                <!-- Logo 4 -->
+                <div class="p-6 flex items-center justify-center">
+                    <img src="assets/images/brand-name/4.png" alt="Franchise Logo 4" class="h-12 md:h-16 object-contain">
+                </div>
+                <!-- Logo 5 -->
+                <div class="p-6 flex items-center justify-center">
+                    <img src="assets/images/brand-name/5.png" alt="Franchise Logo 5" class="h-12 md:h-16 object-contain">
+                </div>
+                <!-- Logo 6 -->
+                <div class="p-6 flex items-center justify-center">
+                    <img src="assets/images/brand-name/6.png" alt="Franchise Logo 6" class="h-12 md:h-16 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -929,7 +969,7 @@
     <script>
         // testimonal section owl caraousel
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $(".testimonial-carousel").owlCarousel({
                 loop: true,
                 margin: 20,
                 nav: false,
@@ -941,6 +981,25 @@
                     0: { items: 1 },
                     768: { items: 1 },
                     1024: { items: 1 }
+                }
+            });
+
+            $(".franchise-logos").owlCarousel({
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1024: {
+                        items: 6
+                    }
                 }
             });
         });
