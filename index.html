@@ -28,7 +28,7 @@
 <body class="bg-slate-50">
 
     <!-- Header Start -->
-    <header class="sticky top-0 z-50 bg-[#1ea51e]/10 backdrop-blur-md shadow-md">
+    <header class="sticky top-0 z-50 bg-[#1ea51e]/10 backdrop-blur-xl shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
@@ -40,6 +40,9 @@
                 <nav class="hidden md:flex items-center gap-8 text-[14px]">
                     <a href="#" class="text-[#1ea51e] font-bold transition duration-300 flex items-center gap-1"><i
                             class="ri-home-4-line"></i> Home</a>
+                    <a href="#"
+                        class="text-gray-800 bg-gradient-to-r hover:text-[#1ea51e] transition duration-300 flex items-center gap-1"><i
+                            class="ri-group-2-line"></i> About</a>
                     <a href="#"
                         class="text-gray-800 bg-gradient-to-r hover:text-[#1ea51e] transition duration-300 flex items-center gap-1"><i
                             class="ri-apps-line"></i> Categories</a>
@@ -72,12 +75,30 @@
         <!-- Mobile Navigation -->
         <div id="mobileMenu"
             class="md:hidden flex absolute -left-full transition-all duration-300 backdrop-blur-md w-full h-[100dvh]">
-            <div class="w-[65%] h-full px-5 py-5 bg-[#1a9c1a] text-white font-medium space-y-4">
-                <div class="mt-5 mb-2 flex gap-3 flex-col">
-                    <a href="#" class="block hover:text-black">Home</a>
-                    <a href="#" class="block hover:text-black">Categories</a>
-                    <a href="#" class="block hover:text-black">Offers</a>
-                    <a href="#" class="block hover:text-black">Contact</a>
+            <div class="w-[75%] h-full px-5 py-5 bg-[#1a9c1a] text-white font-medium space-y-4">
+                <div>
+                    <ul class="mt-5 mb-2 flex gap-3 flex-col">
+                        <li class="flex gap-1">
+                            <i class="ri-home-4-line"></i>
+                            <a href="#" class="block hover:text-black">Home</a>
+                        </li>
+                        <li class="flex gap-1">
+                            <i class="ri-group-2-line"></i>
+                            <a href="#" class="block hover:text-black">About</a>
+                        </li>
+                        <li class="flex gap-1">
+                            <i class="ri-apps-line"></i>
+                            <a href="#" class="block hover:text-black">Categories</a>
+                        </li>
+                        <li class="flex gap-1">
+                            <i class="ri-price-tag-3-line"></i>
+                            <a href="#" class="block hover:text-black">Offers</a>
+                        </li>
+                        <li class="flex gap-1">
+                            <i class="ri-contacts-book-line"></i>
+                            <a href="#" class="block hover:text-black">Contact</a>
+                        </li>
+                    </ul>
                 </div>
                 <button
                     class="text-sm w-full py-3 backdrop-blur-md border border-white/70 text-white hover:scale-105 transition-all duration-300 rounded-full">Download
@@ -131,12 +152,13 @@
     </section>
     <!-- Hero Section End -->
 
+    <!-- why choose section start -->
     <section class="bg-white py-16 px-4 md:px-8 lg:px-20">
         <div class="max-w-7xl mx-auto">
 
             <!-- Top Section Heading -->
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900">
+                <h2 class="text-2xl sm:text-4xl font-bold text-gray-900">
                     Why Choose <span class="text-[#1ea51e]">Our Supermarket Franchise?</span>
                 </h2>
                 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -146,109 +168,127 @@
             </div>
 
 
-
             <!-- Zig-Zag Features Section -->
             <div class="space-y-16 mt-16">
 
                 <!-- Feature 1 -->
-                <div class="flex flex-col md:flex-row items-center gap-6" data-aos="fade-up">
-                    <div class="text-[#1ea51e] text-5xl bg-[#e9fce9] p-6 rounded-full shadow-md">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Explosive Market Opportunity</h3>
-                        <p class="text-gray-600 mt-2">
-                            India's retail and FMCG sector is booming like never before, offering you an unmatched
-                            opportunity to tap into a
-                            billion-dollar market. With increasing demand for quality products at affordable prices, you
-                            can secure a strong foothold
-                            in a highly scalable business — without having to start from scratch.
-                        </p>
+                <div class="w-full flex justify-start" data-aos="fade-up">
+                    <div class="md:w-[75%] flex gap-6 text-center md:text-start items-center flex-col md:flex-row">
+                        <div
+                            class="flex items-center justify-center text-[#1ea51e] text-4xl bg-[#e9fce9] w-20 h-20 rounded-full shadow-md">
+                            <i class="ri-bar-chart-2-line"></i>
+                        </div>
+                        <div class="md:w-[80%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-800">Explosive Market Opportunity</h3>
+                            <p class="text-gray-600 mt-2">
+                                India's retail and FMCG sector is booming like never before, offering you an unmatched
+                                opportunity to tap into a billion-dollar market. With increasing demand for quality
+                                products at
+                                affordable prices, you can secure a strong foothold in a highly scalable business —
+                                without
+                                having to start from scratch.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="flex flex-col md:flex-row-reverse items-center gap-6" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <div class="text-[#1ea51e] text-5xl bg-[#e9fce9] p-6 rounded-full shadow-md">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Brand That Builds Trust</h3>
-                        <p class="text-gray-600 mt-2">
-                            With years of excellence and a strong presence in the market, our brand has earned customer
-                            loyalty and recognition.
-                            Our name carries trust, reliability, and consistency — so your store becomes the preferred
-                            choice in your local
-                            area right from the beginning.
-                        </p>
+                <div class="w-full flex justify-end" data-aos="fade-up" data-aos-delay="100">
+                    <div class="md:w-[75%] flex gap-6 text-center md:text-start items-center flex-col md:flex-row">
+                        <div
+                            class="flex items-center justify-center text-[#1ea51e] text-4xl bg-[#e9fce9] w-20 h-20 rounded-full shadow-md">
+                            <i class="ri-shield-check-line"></i>
+                        </div>
+                        <div class="md:w-[80%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-800">Brand That Builds Trust</h3>
+                            <p class="text-gray-600 mt-2">
+                                With years of excellence and a strong presence in the market, our brand has earned
+                                customer
+                                loyalty and recognition. Our name carries trust, reliability, and consistency — so your
+                                store
+                                becomes the preferred choice in your local area right from the beginning.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="flex flex-col md:flex-row items-center gap-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-[#1ea51e] text-5xl bg-[#e9fce9] p-6 rounded-full shadow-md">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Support That Scales With You</h3>
-                        <p class="text-gray-600 mt-2">
-                            Our dedicated franchise support team helps you every step of the way — from store setup and
-                            inventory planning to
-                            promotions and expansion. As your business grows, our support system scales with you to
-                            ensure you’re never alone in your journey.
-                        </p>
+                <div class="w-full flex justify-start" data-aos="fade-up" data-aos-delay="200">
+                    <div class="md:w-[75%] flex gap-6 text-center md:text-start items-center flex-col md:flex-row">
+                        <div
+                            class="flex items-center justify-center text-[#1ea51e] text-4xl bg-[#e9fce9] w-20 h-20 rounded-full shadow-md">
+                            <i class="ri-service-line"></i>
+                        </div>
+                        <div class="md:w-[80%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-800">Support That Scales With You</h3>
+                            <p class="text-gray-600 mt-2">
+                                Our dedicated franchise support team helps you every step of the way — from store setup
+                                and
+                                inventory planning to promotions and expansion. As your business grows, our support
+                                system scales
+                                with you to ensure you’re never alone in your journey.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="flex flex-col md:flex-row-reverse items-center gap-6" data-aos="fade-up"
-                    data-aos-delay="300">
-                    <div class="text-[#1ea51e] text-5xl bg-[#e9fce9] p-6 rounded-full shadow-md">
-                        <i class="fas fa-boxes"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Smart Supply Chain Ecosystem</h3>
-                        <p class="text-gray-600 mt-2">
-                            Our tech-driven logistics and intelligent inventory management ensure your shelves are
-                            always stocked with the right
-                            products. Enjoy better margins, reduced wastage, and faster deliveries — thanks to a robust
-                            supply chain designed for profitability.
-                        </p>
+                <div class="w-full flex justify-end" data-aos="fade-up" data-aos-delay="300">
+                    <div class="md:w-[75%] flex gap-6 text-center md:text-start items-center flex-col md:flex-row">
+                        <div
+                            class="flex items-center justify-center text-[#1ea51e] text-4xl bg-[#e9fce9] w-20 h-20 rounded-full shadow-md">
+                            <i class="ri-truck-line"></i>
+                        </div>
+                        <div class="md:w-[80%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-800">Smart Supply Chain Ecosystem</h3>
+                            <p class="text-gray-600 mt-2">
+                                Our tech-driven logistics and intelligent inventory management ensure your shelves are
+                                always
+                                stocked with the right products. Enjoy better margins, reduced wastage, and faster
+                                deliveries —
+                                thanks to a robust supply chain designed for profitability.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Feature 5 -->
-                <div class="flex flex-col md:flex-row items-center gap-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-[#1ea51e] text-5xl bg-[#e9fce9] p-6 rounded-full shadow-md">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Your Franchise Growth Partner</h3>
-                        <p class="text-gray-600 mt-2">
-                            We believe in your growth and success. That's why we assign you a dedicated franchise
-                            success manager who helps you with
-                            store operations, business planning, and marketing strategies. Consider us your long-term
-                            partner in making your store a
-                            local favorite.
-                        </p>
+                <div class="w-full flex justify-start" data-aos="fade-up" data-aos-delay="400">
+                    <div class="md:w-[75%] flex gap-6 text-center md:text-start items-center flex-col md:flex-row">
+                        <div
+                            class="flex items-center justify-center text-[#1ea51e] text-4xl bg-[#e9fce9] w-20 h-20 rounded-full shadow-md">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <div class="md:w-[80%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-800">Your Franchise Growth Partner</h3>
+                            <p class="text-gray-600 mt-2">
+                                We believe in your growth and success. That's why we assign you a dedicated franchise
+                                success
+                                manager who helps you with store operations, business planning, and marketing
+                                strategies.
+                                Consider us your long-term partner in making your store a local favorite.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Feature 6 -->
-                <div class="flex flex-col md:flex-row-reverse items-center gap-6" data-aos="fade-up"
-                    data-aos-delay="500">
-                    <div class="text-[#1ea51e] text-5xl bg-[#e9fce9] p-6 rounded-full shadow-md">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Transparent & Affordable Setup</h3>
-                        <p class="text-gray-600 mt-2">
-                            We value your investment. Our franchise plans are designed to be budget-friendly, flexible,
-                            and absolutely transparent.
-                            No hidden fees, no complicated contracts — just a simple path to building your own
-                            profitable business.
-                        </p>
+                <div class="w-full flex justify-end" data-aos="fade-up" data-aos-delay="500">
+                    <div class="md:w-[75%] flex gap-6 text-center md:text-start items-center flex-col md:flex-row">
+                        <div
+                            class="flex items-center justify-center text-[#1ea51e] text-4xl bg-[#e9fce9] w-20 h-20 rounded-full shadow-md">
+                            <i class="ri-money-dollar-circle-line"></i>
+                        </div>
+                        <div class="md:w-[80%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-800">Transparent & Affordable Setup</h3>
+                            <p class="text-gray-600 mt-2">
+                                We value your investment. Our franchise plans are designed to be budget-friendly,
+                                flexible, and
+                                absolutely transparent. No hidden fees, no complicated contracts — just a simple path to
+                                building
+                                your own profitable business.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -257,21 +297,128 @@
                     <h3 class="text-3xl font-bold text-gray-800">Ready to Build Your Dream Store?</h3>
                     <p class="text-gray-600 mt-3">
                         Take the first step toward financial freedom and business ownership. With our proven systems,
-                        trusted brand, and complete support — your success is just one decision away.
+                        trusted
+                        brand, and complete support — your success is just one decision away.
                     </p>
-                    <button class="mt-6 px-8 py-3 bg-[#1ea51e] text-white rounded-full hover:bg-[#168c16] transition">
+                    <button
+                        class="mt-6 px-8 py-3 bg-[#1ea51e] text-white rounded-full hover:bg-[#168c16] hover:scale-105 transition">
                         Apply for Franchise
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why choose section start -->
+
+    <!-- about section start -->
+    <section class="bg-[#f8f8f8] py-24 px-6 lg:px-12 overflow-x-hidden" id="about">
+        <div class="max-w-6xl mx-auto mb-20 grid md:grid-cols-2 gap-10 sm:gap-5 lg:gap-10">
+            <!-- Image -->
+            <div data-aos="fade-right" class="col-span-2 md:col-span-1">
+                <img src="assets/images/about_store.png" alt="Urban Grocery Mart"
+                    class="object-cover h-[275px] sm:h-[400px] rounded-md shadow-xl w-full">
+            </div>
+
+            <!-- Text Content -->
+            <div data-aos="fade-left" class="col-span-2 md:col-span-1">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">About Our Company</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    We are redefining the supermarket experience with a smart franchise model that prioritizes
+                    community,
+                    innovation, and affordability. Our goal is to build a connected shopping ecosystem for everyone.
+                </p>
+
+                <!-- Vision / Mission / Franchise -->
+                <div class="space-y-6 mb-10">
+                    <div class="flex items-start gap-4">
+                        <i class="ri-lightbulb-flash-line text-2xl text-[#1ea51e] mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Our Vision</h4>
+                            <p class="text-sm text-gray-600">To create a modern, efficient, and sustainable retail
+                                ecosystem
+                                that empowers local communities.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="ri-user-heart-line text-2xl text-[#1ea51e] mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Our Mission</h4>
+                            <p class="text-sm text-gray-600">Deliver convenience, affordability, and trust through every
+                                franchise store we support.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="ri-store-2-line text-2xl text-[#1ea51e] mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Franchise First</h4>
+                            <p class="text-sm text-gray-600">We grow when our partners grow. That’s why we build
+                                long-term
+                                win-win partnerships with each franchisee.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Additional Info Cards - Unique Modern UI -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 col-span-2 mt-4">
+
+                <!-- Card 1 -->
+                <div
+                    class="group bg-gradient-to-tr from-[#f0fdfa] to-white p-6 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="bg-green-100 text-[#1ea51e] rounded-full w-16 h-16 flex justify-center items-center text-2xl">
+                            <i class="ri-shield-check-line"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-center mb-2 text-gray-800">Our Commitment</h4>
+                    <p class="text-gray-600 text-sm text-center leading-relaxed">
+                        Delivering fresh, high-quality products at the best prices with end-to-end care and transparency
+                        to build trust and loyalty.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group bg-gradient-to-tr to-[#f0fdfa] from-white p-6 rounded-2xl border border-green-100 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="bg-green-100 text-[#1ea51e] rounded-full w-16 h-16 flex justify-center items-center text-2xl">
+                            <i class="ri-rocket-line"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-center mb-2 text-gray-800">Driven by Innovation</h4>
+                    <p class="text-gray-600 text-sm text-center leading-relaxed">
+                        Leveraging smart inventory systems and AI-driven service to transform the shopping experience
+                        through technology.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="group bg-gradient-to-tr from-[#f0fdfa] to-white p-6 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="bg-green-100 text-[#1ea51e] rounded-full w-16 h-16 flex justify-center items-center text-2xl">
+                            <i class="ri-star-smile-line"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-center mb-2 text-gray-800">Why Choose Us?</h4>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left list-disc list-inside">
+                        <li>✅ Trusted by 100+ franchise partners</li>
+                        <li>🌱 Eco-friendly operations</li>
+                        <li>🤝 24x7 customer support</li>
+                        <li>🚚 Real-time order tracking</li>
+                    </ul>
                 </div>
 
             </div>
 
-
         </div>
     </section>
+    <!-- about section end -->
 
-    </div>
-    </section>
+
+
 
 
     <!-- JS: Mobile Menu Toggle -->
