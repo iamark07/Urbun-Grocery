@@ -26,3 +26,21 @@ function handleSubmit(event) {
     document.getElementById("franchiseForm").reset();
   }, 5000);
 }
+
+
+
+// gallery section popup functionality 
+function openModal(src) {
+    document.getElementById("lightboxModal").classList.remove("hidden");
+    document.getElementById("lightboxImage").src = src;
+}
+
+function closeModal() {
+    document.getElementById("lightboxModal").classList.add("hidden");
+    document.getElementById("lightboxImage").src = "";
+}
+
+// Optional: Close modal on ESC key
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+});

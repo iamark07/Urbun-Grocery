@@ -21,6 +21,14 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/images/fav-icon.png" type="image/png" />
 
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- owl caraousel link-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
     <title>Urban Grocery</title>
 
 </head>
@@ -33,7 +41,7 @@
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <div>
-                    <img src="assets/images/new-logo.png" alt="Urban Grocery" class="w-44">
+                    <img loading="lazy" src="assets/images/new-logo.png" alt="Urban Grocery" class="w-44">
                 </div>
 
                 <!-- Navigation -->
@@ -140,7 +148,7 @@
             <div class="lg:col-span-4 relative hero-fade-in-up md:ps-10">
                 <div class="relative w-full">
                     <div class="absolute -inset-4 bg-white/20 rounded-full blur-3xl opacity-50"></div>
-                    <img src="assets/images/hero-section.jpg" alt="Grocery Bag"
+                    <img loading="lazy" src="assets/images/hero-section.jpg" alt="Grocery Bag"
                         class="relative z-10 w-full h-[300px] md:h-[450px] object-cover drop-shadow-xl rounded-3xl" />
                 </div>
                 <!-- <div
@@ -313,10 +321,10 @@
     <!-- about section start -->
     <section class="bg-[#f8f8f8] py-24 px-6 lg:px-12 overflow-x-hidden" id="about">
         <div class="max-w-6xl mx-auto mb-20 grid md:grid-cols-2 gap-10 sm:gap-5 lg:gap-10">
-            
+
 
             <!-- Text Content -->
-            <div data-aos="fade-left" class="col-span-2 md:col-span-1">
+            <div data-aos="fade-right" class="col-span-2 md:col-span-1">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">About Our Company</h2>
                 <p class="text-gray-600 leading-relaxed mb-6">
                     We are redefining the supermarket experience with a smart franchise model that prioritizes
@@ -358,8 +366,8 @@
 
             </div>
             <!-- Image -->
-            <div data-aos="fade-right" class="col-span-2 md:col-span-1">
-                <img src="assets/images/about_store.png" alt="Urban Grocery Mart"
+            <div data-aos="fade-left" class="col-span-2 md:col-span-1">
+                <img loading="lazy" src="assets/images/about_store.png" alt="Urban Grocery Mart"
                     class="object-cover h-[275px] sm:h-[400px] rounded-md shadow-xl w-full">
             </div>
             <!-- Additional Info Cards - Unique Modern UI -->
@@ -563,7 +571,7 @@
         <div class="max-w-7xl mx-auto text-center">
 
             <!-- Title -->
-            <h2 class="text-3xl md:text-5xl font-bold text-[#153e26] mb-4" data-aos="fade-up">
+            <h2 class="text-2xl md:text-4xl font-bold text-[#153e26] mb-4" data-aos="fade-up">
                 Franchise Models We Offer
             </h2>
             <p class="text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-14" data-aos="fade-up">
@@ -628,7 +636,8 @@
     <!-- Franchise Models Section end-->
 
     <!-- Franchise Inquiry Section start-->
-    <section class="bg-gradient-to-br from-[#f6fff9] to-[#e9fef3] py-20 px-6 md:px-12 overflow-x-hidden" id="franchise-inquiry">
+    <section class="bg-gradient-to-br from-[#f6fff9] to-[#e9fef3] py-20 px-6 md:px-12 overflow-x-hidden"
+        id="franchise-inquiry">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
 
             <!-- Left Content -->
@@ -644,7 +653,8 @@
                     <li><i class="ri-check-line text-[#1ea51e] mr-2"></i>End-to-end setup support</li>
                 </ul>
                 <div class="mt-5">
-                    <img src="assets/images/franchise-form.png" alt="" class="object-cover w-full h-[275px] sm:h-[300px] lg:h-[400px] rounded-md shadow-lg">
+                    <img loading="lazy" src="assets/images/franchise-form.png" alt=""
+                        class="object-cover w-full h-[275px] sm:h-[300px] lg:h-[400px] rounded-md shadow-lg">
                 </div>
             </div>
 
@@ -709,6 +719,128 @@
     </section>
     <!-- Franchise Inquiry Section end-->
 
+    <!-- Gallery Section -->
+    <section class="bg-[#f8fff9] py-20 px-6 md:px-12" id="gallery">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-2xl md:text-4xl font-bold text-[#153e26]" data-aos="fade-up">
+                Explore Our Supermarket Vibes
+            </h2>
+            <p class="text-gray-600 mt-3 max-w-2xl mx-auto" data-aos="fade-up">
+                A glimpse into our modern, well-organized Urban Grocery outlets designed for a premium shopping
+                experience.
+            </p>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto" data-aos="fade-up">
+            <!-- Image Card -->
+            <div class="group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition"
+                onclick="openModal('assets/images/gallery-img/gallery-1.jpg')">
+                <img loading="lazy" src="assets/images/gallery-img/gallery-1.jpg" alt="Urban Grocery 1"
+                    class="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+
+            <div class="group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition"
+                onclick="openModal('assets/images/gallery-img/gallery-2.jpg')">
+                <img loading="lazy" src="assets/images/gallery-img/gallery-2.jpg" alt="Urban Grocery 2"
+                    class="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+
+            <div class="group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition"
+                onclick="openModal('assets/images/gallery-img/gallery-3.jpg')">
+                <img loading="lazy" src="assets/images/gallery-img/gallery-3.jpg" alt="Urban Grocery 3"
+                    class="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+
+            <div class="group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition"
+                onclick="openModal('assets/images/gallery-img/gallery-4.jpg')">
+                <img loading="lazy" src="assets/images/gallery-img/gallery-4.jpg" alt="Urban Grocery 4"
+                    class="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+
+            <div class="group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition"
+                onclick="openModal('assets/images/gallery-img/gallery-5.jpg')">
+                <img loading="lazy" src="assets/images/gallery-img/gallery-5.jpg" alt="Urban Grocery 5"
+                    class="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+
+            <div class="group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition"
+                onclick="openModal('assets/images/gallery-img/gallery-6.jpg')">
+                <img loading="lazy" src="assets/images/gallery-img/gallery-6.jpg" alt="Urban Grocery 6"
+                    class="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-6">
+        <span onclick="closeModal()" class="absolute top-6 right-6 text-white text-3xl cursor-pointer">&times;</span>
+        <img loading="lazy" id="lightboxImage" src="" alt="Full Preview"
+            class="max-w-full max-h-[80dvh] rounded-lg shadow-xl">
+    </div>
+
+
+    <!-- testiminal section start -->
+    <section class="bg-gradient-to-br from-[#f5fff9] to-white py-20 px-6 md:px-12" id="testimonials">
+        <div class="max-w-6xl mx-auto text-center mb-14">
+            <h2 class="text-2xl md:text-4xl font-bold text-[#153e26]" data-aos="fade-up">What Our Franchise Owners Say</h2>
+            <p class="text-gray-600 mt-3 max-w-2xl mx-auto" data-aos="fade-up">
+                Real experiences. Real success stories from across India.
+            </p>
+        </div>
+
+        <div data-aos="fade-up">
+            <div class="owl-carousel owl-theme max-w-2xl mx-auto">
+                <!-- Testimonial Card 1 -->
+                <div class="item p-4 cursor-pointer">
+                    <div class="bg-white/90 backdrop-blur-md border border-[#b6f3cd] rounded-2xl shadow-lg p-6">
+                        <p class="text-gray-700 text-base italic mb-4">"Urban Grocery's systems are so refined that even a
+                            first-time entrepreneur like me felt confident. Sales are booming!"</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://i.pravatar.cc/60?img=23" class="!w-12 !h-12 rounded-full" alt="user" />
+                            <div>
+                                <h4 class="font-semibold text-[#153e26]">Neha Patil</h4>
+                                <p class="text-sm text-gray-500">Nashik Franchisee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="item p-4 cursor-pointer">
+                    <div class="bg-white/90 backdrop-blur-md border border-[#b6f3cd] rounded-2xl shadow-lg p-6">
+                        <p class="text-gray-700 text-base italic mb-4">"Their franchise onboarding was smooth, professional,
+                            and inspiring. Customers love the store!"</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://i.pravatar.cc/60?img=12" class="!w-12 !h-12 rounded-full" alt="user" />
+                            <div>
+                                <h4 class="font-semibold text-[#153e26]">Rahul Jain</h4>
+                                <p class="text-sm text-gray-500">Jaipur Franchisee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="item p-4 cursor-pointer">
+                    <div class="bg-white/90 backdrop-blur-md border border-[#b6f3cd] rounded-2xl shadow-lg p-6">
+                        <p class="text-gray-700 text-base italic mb-4">"Never thought running a supermarket could feel this
+                            streamlined. Urban Grocery has everything ready to go."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://i.pravatar.cc/60?img=17" class="!w-12 !h-12 rounded-full" alt="user" />
+                            <div>
+                                <h4 class="font-semibold text-[#153e26]">Priya Arora</h4>
+                                <p class="text-sm text-gray-500">Lucknow Franchisee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more slides if needed -->
+            </div>
+        </div>
+    </section>
+    <!-- testiminal section end -->
 
 
 
@@ -722,10 +854,35 @@
 
 
 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script>
+        // testimonal section owl caraousel
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            responsive:{
+              0:{ items:1 },
+              768:{ items:1 },
+              1024:{ items:1 }
+            }
+          });
+        });
+      </script>
+      
     <script src="assets/js/script.js"></script>
 
 </body>
