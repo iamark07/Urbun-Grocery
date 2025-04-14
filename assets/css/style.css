@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.poppins-regular {
+* {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
-
-.owl-theme .owl-dots .owl-dot span{
-    background: #bbffd5 !important;
+.owl-theme .owl-dots .owl-dot span {
+  background: #bbffd5 !important;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: #1ea51e !important;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #1ea51e !important;
 }
